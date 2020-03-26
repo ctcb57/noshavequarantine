@@ -1,5 +1,5 @@
 <template>
   <div class="gallery">
-    <h1>This is the gallery page</h1>
+    <h1>Beard Pictures Coming Soon</h1>
   </div>
 </template>
