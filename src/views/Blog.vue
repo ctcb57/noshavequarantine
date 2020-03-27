@@ -1,5 +1,38 @@
 <template>
   <div class="blog">
-    <h1>Blog Posts Coming Soon</h1>
+    <b-container>
+      <div>
+        <h1>The Birth of a Beard and Website</h1>
+      </div>
+      <br>
+      <b-row>
+        <b-col cols="2"></b-col>
+        <b-col cols="8">
+          <div>
+            <b-list-group>
+              <b-list-group-item to="/blog/1" class="flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">No Shave Quarantine Begins</h5>
+                  <medium>March 24, 2020</medium>
+                </div>
+              </b-list-group-item>
+              <b-list-group-item to="/blog/2" class="flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Let's Get Ready to Rumble</h5>
+                  <medium>March 25, 2020</medium>
+                </div>
+              </b-list-group-item>
+              <b-list-group-item to="/blog/3" class="flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Rome Wasn't Built in a Day</h5>
+                  <medium>March 26, 2020</medium>
+                </div>
+              </b-list-group-item>
+            </b-list-group>
+          </div>
+        </b-col>
+        <b-col cols="2"></b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
