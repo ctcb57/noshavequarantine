@@ -49,7 +49,7 @@ const routes = [
     component: Gallery
   },
   {
-    path: 'gallery/upload-image',
+    path: '/gallery/upload-image',
     name: 'upload-image',
     component: UploadImage
   },

@@ -1,5 +1,5 @@
 <template>
   <div class="gallery">
-    <h1>Beard Pictures Coming Soon</h1>
+    <h1 class="text-center" style="text-decoration: underline">The Evolution of a Beard</h1>
   </div>
 </template>
