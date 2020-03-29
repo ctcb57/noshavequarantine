@@ -64,6 +64,22 @@ export default {
       },
       show: true
     }
+  },
+  methods: {
+    onSubmit (evt) {
+      evt.preventDefault()
+      // Send to the API and ensure the modal pops up
+    },
+    onReset (evt) {
+      evt.preventDefault()
+      this.form.title = ''
+      this.form.date = null
+      this.form.post = ''
+      this.show = false
+      this.$nextTick(() => {
+        this.show = true
+      })
+    }
   }
 }
 </script>
