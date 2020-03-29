@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Blog from '../views/Blog.vue'
 import Gallery from '../views/Gallery.vue'
 import Donate from '../views/Donate.vue'
+import CreatePost from '../views/CreatePost.vue'
 import March24 from '../views/posts/March24.vue'
 import March25 from '../views/posts/March25.vue'
 import March26 from '../views/posts/March26.vue'
@@ -20,6 +21,11 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: Blog
+  },
+  {
+    path: '/blog/create-post',
+    name: 'create-post',
+    component: CreatePost
   },
   {
     path: '/blog/1',
