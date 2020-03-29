@@ -44,6 +44,10 @@
                         max-rows="12"
                     ></b-form-textarea>
                 </b-form-group>
+                <b-row>
+                    <b-col cols="3" sm="1" class="text-right"><b-button pill type="submit" variant="primary">Submit</b-button></b-col>
+                    <b-col cols="3" sm="1" class="text-left"><b-button pill type="reset" variant="dark">Reset</b-button></b-col>
+                </b-row>
             </b-card>
         </b-form>
     </div>
