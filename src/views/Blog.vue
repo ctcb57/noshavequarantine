@@ -28,6 +28,12 @@
                   <medium>March 26, 2020</medium>
                 </div>
               </b-list-group-item>
+              <b-list-group-item to="/blog/4" class="flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Kansas City Here I Come</h5>
+                  <medium>March 28, 2020</medium>
+                </div>
+              </b-list-group-item>
             </b-list-group>
           </div>
         </b-col>

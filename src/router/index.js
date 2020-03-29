@@ -9,6 +9,8 @@ import CreatePost from '../views/CreatePost.vue'
 import March24 from '../views/posts/March24.vue'
 import March25 from '../views/posts/March25.vue'
 import March26 from '../views/posts/March26.vue'
+import March28 from '../views/posts/March28.vue'
+import March29 from '../views/posts/March29.vue'
 
 Vue.use(VueRouter)
 
@@ -42,6 +44,16 @@ const routes = [
     path: '/blog/3',
     name: 'march26',
     component: March26
+  },
+  {
+    path: '/blog/4',
+    name: 'march28',
+    component: March28
+  },
+  {
+    path: '/blog/5',
+    name: 'march29',
+    component: March29
   },
   {
     path: '/gallery',
