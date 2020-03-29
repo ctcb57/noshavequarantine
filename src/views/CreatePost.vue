@@ -32,7 +32,7 @@
                 </b-form-group>
                 <b-form-group
                     label-cols="2"
-                    label="Post Content"
+                    label="Post Content:"
                     label-size="lg"
                     label-align="left"
                     label-for="content"
@@ -45,8 +45,12 @@
                     ></b-form-textarea>
                 </b-form-group>
                 <b-row>
-                    <b-col cols="3" sm="1" class="text-right"><b-button pill type="submit" variant="primary">Submit</b-button></b-col>
+                    <b-col cols="3" sm="1" class="text-right"><b-button pill type="submit" variant="primary" v-b-modal.validation>Submit</b-button></b-col>
                     <b-col cols="3" sm="1" class="text-left"><b-button pill type="reset" variant="dark">Reset</b-button></b-col>
+
+                    <b-modal id="validation" title="Submission Status" @ok="handleOk">
+                        <p class="my-4">Post Submitted!</p>
+                    </b-modal>
                 </b-row>
             </b-card>
         </b-form>
@@ -79,6 +83,10 @@ export default {
       this.$nextTick(() => {
         this.show = true
       })
+    },
+    handleOk (bvModalEvt) {
+      bvModalEvt.preventDefault()
+      this.$router.push('/blog')
     }
   }
 }
