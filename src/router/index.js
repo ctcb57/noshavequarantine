@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Blog from '../views/Blog.vue'
 import Gallery from '../views/Gallery.vue'
+import UploadImage from '../views/UploadImage.vue'
 import Donate from '../views/Donate.vue'
 import CreatePost from '../views/CreatePost.vue'
 import March24 from '../views/posts/March24.vue'
@@ -46,6 +47,11 @@ const routes = [
     path: '/gallery',
     name: 'gallery',
     component: Gallery
+  },
+  {
+    path: 'gallery/upload-image',
+    name: 'upload-image',
+    component: UploadImage
   },
   {
     path: '/donate',

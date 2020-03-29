@@ -47,7 +47,6 @@
                 <b-row>
                     <b-col cols="3" sm="1" class="text-right"><b-button pill type="submit" variant="primary" v-b-modal.validation>Submit</b-button></b-col>
                     <b-col cols="3" sm="1" class="text-left"><b-button pill type="reset" variant="dark">Reset</b-button></b-col>
-
                     <b-modal id="validation" title="Submission Status" @ok="handleOk">
                         <p class="my-4">Post Submitted!</p>
                     </b-modal>
