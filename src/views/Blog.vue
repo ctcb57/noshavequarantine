@@ -34,6 +34,12 @@
                   <medium>March 28, 2020</medium>
                 </div>
               </b-list-group-item>
+              <b-list-group-item to="/blog/5" class="flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Let's Get It Started</h5>
+                  <medium>March 29, 2020</medium>
+                </div>
+              </b-list-group-item>
             </b-list-group>
           </div>
         </b-col>
