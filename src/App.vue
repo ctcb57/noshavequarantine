@@ -16,7 +16,7 @@
             <b-nav pills justified align="center">
               <b-nav-item to="/" exact exact-active-class="active">Home</b-nav-item>
               <b-nav-item to="/blog" active-class="active">Blog</b-nav-item>
-              <b-nav-item to="/gallery" exact exact-active-class="active">Gallery</b-nav-item>
+              <b-nav-item to="/gallery" active-class="active">Gallery</b-nav-item>
               <b-nav-item to="/donate" exact exact-active-class="active">Donate</b-nav-item>
             </b-nav>
           </div>
@@ -44,6 +44,7 @@
 }
 #nav-bar {
   height: 100px;
+  position: sticky;
 }
 
 </style>
