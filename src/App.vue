@@ -44,6 +44,7 @@
 }
 #nav-bar {
   height: 100px;
+  position: sticky;
 }
 
 </style>

@@ -6,8 +6,8 @@
       </div>
       <br>
       <b-row>
-        <b-col cols="2"></b-col>
-        <b-col cols="8">
+        <b-col cols="2" sm="1"></b-col>
+        <b-col cols="8" sm="10">
           <div>
             <b-list-group>
               <b-list-group-item to="/blog/1" class="flex-column align-items-start">
@@ -43,7 +43,7 @@
             </b-list-group>
           </div>
         </b-col>
-        <b-col cols="2"></b-col>
+        <b-col cols="2" sm="1"></b-col>
       </b-row>
     </b-container>
   </div>
