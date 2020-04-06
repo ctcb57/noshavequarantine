@@ -11,7 +11,7 @@
                     label-align="left"
                     label-for="title"
                 >
-                    <b-form-input id="title" type="text" placeholder="Enter a Title"></b-form-input>
+                    <b-form-input id="title" type="text" placeholder="Enter a Title" v-model="title"></b-form-input>
                 </b-form-group>
                 <b-form-group
                     label-cols="2"
@@ -28,6 +28,7 @@
                         locale="en"
                         placeholder="Choose a date"
                         class="text-left"
+                        v-model="date"
                     ></b-form-datepicker>
                 </b-form-group>
                 <b-form-group
@@ -42,6 +43,7 @@
                         placeholder="Enter blog post content here"
                         rows="6"
                         max-rows="12"
+                        v-model="post"
                     ></b-form-textarea>
                 </b-form-group>
                 <b-row>
@@ -57,6 +59,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data () {
     return {
@@ -70,8 +74,17 @@ export default {
   },
   methods: {
     onSubmit (evt) {
+      console.log('this was hit')
+      console.log(this.title)
       evt.preventDefault()
-      // Send to the API and ensure the modal pops up
+      axios.post('http://localhost:3000/blogs', {
+        title: this.title,
+        post: this.post,
+        date: this.date
+      })
+        .then(response => {
+          console.log(response)
+        })
     },
     onReset (evt) {
       evt.preventDefault()
