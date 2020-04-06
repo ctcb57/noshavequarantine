@@ -1,9 +1,16 @@
 <template>
   <div class="blog">
     <b-container>
-      <div>
-        <h1>The Birth of a Beard and Website</h1>
-      </div>
+      <b-row>
+        <b-col cols="8">
+          <div>
+            <h1>The Birth of a Beard and Website</h1>
+          </div>
+        </b-col>
+        <b-col cols="4">
+          <b-button variant="primary" size="lg" to="blog/create-post">Create Post</b-button>
+        </b-col>
+      </b-row>
       <br>
       <b-row>
         <b-col cols="2" sm="1"></b-col>
